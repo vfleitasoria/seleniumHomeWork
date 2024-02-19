@@ -27,17 +27,10 @@ public class MercuryToursRegister  {
         } else {
             System.out.println("Page title is not Mercury Tours");
         }
-        /**Enter first name
-        6. Enter last name
-        7. Enter phone number
-        8. Enter email
-        9. Enter address
-        10. Enter city
-        11. Enter state
-        12. Enter zip code
-        13. Enter username
-        14. Enter password
-        */
+       //Enter first name// Enter last name// Enter phone number
+       //Enter email//Enter address // Enter city // Enter state 
+       // Enter zip code// Enter username // Enter password
+     
         driver.findElement(By.name("firstName")).sendKeys("John");
         driver.findElement(By.name("lastName")).sendKeys("Cena");
         driver.findElement(By.name("phone")).sendKeys("1234567890");
@@ -53,12 +46,12 @@ public class MercuryToursRegister  {
      // 16. Click Submit
         driver.findElement(By.name("submit")).click();
 
-     // 17. Wait for confirmation message
-       // try {
-          //  Thread.sleep(2000); // Wait for 5 seconds
-        //} catch (InterruptedException e) {
-       //     e.printStackTrace();
-       // }
+    //17. Wait for confirmation message
+       try {
+            Thread.sleep(2000); // Wait for 5 seconds
+        } catch (InterruptedException e) {
+           e.printStackTrace();
+        }
 
         // Retrieve the confirmation text message
         WebElement confirmationMessage = driver.findElement(By.xpath("//b[contains(text(), 'Thank you for registering')]"));
